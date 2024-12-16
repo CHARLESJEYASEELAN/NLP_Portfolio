@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Jeyaseelan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="DEVFUSION.png" type="image/png">
+    <style>
+        /* Timeline styles */
+        .timeline {
+            list-style: none;
+            padding-left: 0;
+            position: relative;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 15px 0;
+        }
+
+        .timeline-badge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timeline-panel {
+            margin-left: 50px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .timeline-heading {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .timeline-body {
+            font-size: 0.9rem;
+        }
+
+        /* Optional: Timeline line */
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #3498db;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teaching-mentorship">Mentorship</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-dark text-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Hey, I'm Charles</h1>
+            <p class="lead">NLP Researcher | Deep Learning Enthusiast | IEEE Student Member</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="picSample_1.jpg" alt="Profile Image" class="img-fluid rounded-circle" width="400"
+                        height="400">
+                </div>
+                <div class="col-md-6">
+
+                    <p>
+                        I'm Charles Jeyaseelan, a passionate AI Researcher currently pursuing a
+                        Master's in Computer Applications. My expertise lies in Deep Learning architectures and their
+                        applications across diverse AI domains, with a special focus on Natural Language Processing
+                        (NLP). I thrive on exploring innovative solutions and building models that push the boundaries
+                        of machine learning.
+
+                        <br><br>My journey in AI includes contributing to cutting-edge research in sentiment analysis,
+                        culminating in a paper accepted at the IEEE CCEM 2023 Conference. I am driven by a vision to
+                        leverage AI for impactful technological advancements that can transform industries and improve
+                        lives.
+
+                        <br><br>Let's connect to discuss AI, Machine Learning, Deep Learning, and the future of
+                        intelligent systems. Together, we can unlock the transformative power of technology!
+
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="https://github.com/CHARLESJEYASEELAN" target="_blank"
+                            class="btn btn-outline-dark me-2">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=RKWM6QcAAAAJ&hl=en" target="_blank"
+                            class="btn btn-outline-dark me-2">
+                            <i class="fas fa-graduation-cap"></i> Google Scholar
+                        </a>
+                        <a href="https://www.linkedin.com/in/charles-jeyaseelan/" target="_blank"
+                            class="btn btn-outline-dark me-2">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Charles-Jeyaseelan" target="_blank"
+                            class="btn btn-outline-dark">
+                            <i class="fab fa-linkedin"></i> Research Gate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4"><u>Research</u></h2>
+            <div class="row border-bottom justify-content-center">
+                <div class="col-md-6 ">
+                    <div class="research-item mb-4">
+                        <h4>Exodus Bi-Directional LSTM-Based Multivariate Texmoji Classification</h4>
+                        <p>Sreekumar NR, Narendran SM, <b>Charles Jeyaseelan</b>, Gautham A, Sreeshanth P, Anushob K
+                            Anand</p>
+                        <p><i>2023 IEEE International Conference on Cloud Computing in Emerging Markets (CCEM)</i></p>
+                        <p>
+                            Does every story which we read with emojis exhibit same intensity of emotions? doesn't it
+                            vary? We proposed a Bi-LSTM model which predicts the emotional intensity of such stories, to
+                            improvise the field of course grained emotion analysis with AI.
+                        </p>
+                        <a href="https://ieeexplore.ieee.org/document/10706554" class="btn btn-primary">View
+                            Publication</a>
+                    </div>
+                </div>
+            </div><br>
+            <h3 class="text-center mb-4"><u>Exploratory Research</u></h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="research-item mb-4">
+                        <h4>Constructing a Big Corpus of Data Using LLM to Feed Generative AI</h4>
+                        <p>Sreekumar NR, Narendran SM, <b>Charles Jeyaseelan</b>, Rahul Ganesh S</p>
+                        <p><i>IEEE CCEM Pre-Conference Workshop 2024 Presentation</i></p>
+                        <p>
+                            <a href="https://www.linkedin.com/posts/charles-jeyaseelan_ieee-nlp-activity-7187842126271954945-xqwU?utm_source=share&utm_medium=member_desktop">Proposed</a> a methodology to train a large language model (LLM) to generate a high-quality
+                            corpus of religious texts, maintaining reliability and sanctity. The corpus is designed to
+                            improve generative AI's ability to produce contextually accurate and culturally sensitive
+                            text.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="research-item mb-4">
+                        <h4>Contextual Semantic Analysis</h4>
+                        <p>Sreekumar NR, Narendran SM, Lasya S, <b>Charles Jeyaseelan</b></p>
+                        <p><i>IEEE CCEM Pre-Conference Workshop 2024 Presentation</i></p>
+                        <p>
+                            <a href="https://www.linkedin.com/posts/charles-jeyaseelan_ieee-nlp-activity-7187842126271954945-xqwU?utm_source=share&utm_medium=member_desktop">Introduced</a> a novel approach to calculate semantic similarity scores for unstructured text
+                            across 8 contextual domains. Leveraged semantic tree transformations and deep learning
+                            regressors to predict contextual scores, aiming to bridge gaps in lexicon-based methods.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="research-item mb-4">
+                        <h4>Emotional Quotient: An AI-Based Approach Using Prolog</h4>
+                        <p>Sreekumar NR, Narendran SM, <b>Charles Jeyaseelan</b></p>
+                        <p><i>IEEE CCEM Pre-Conference Workshop 2024 Presentation</i></p>
+                        <p>
+                            <a href="https://www.linkedin.com/posts/charles-jeyaseelan_ieee-nlp-activity-7187842126271954945-xqwU?utm_source=share&utm_medium=member_desktop">Proposed</a> a method to estimate Emotional Quotient (EQ) using Prolog programming, focusing on
+                            six basic emotions (happy, sad, anger, fear, disgust, surprise). Designed a scoring
+                            mechanism for EQ estimation and multi-variate emotion annotation for predictive analysis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <h4 class="text-center">Contact Me for Collaboration</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Other Projects</h2>
+            <h5 class="text-center mb-4">Explored a blend of academic pursuits, creative side projects, and innovative
+                research endeavors.</h5>
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-4">
+                        <img src="4.png" class="card-img-top border border-5" alt="Project Image" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Genre Classifier: A Machine Learning Approach to Text Classification
+                            </h5>
+                            <p><i>Self-Initiated Learning</i></p>
+                            <p class="card-text"><b>Description:</b> This project explores the application of machine
+                                learning techniques to classify textual data into genres. The primary objective was to
+                                build a robust pipeline capable of handling noisy data and ensuring high classification
+                                accuracy. Leveraging a combination of traditional feature extraction techniques like
+                                TF-IDF and modern embeddings, the model achieves significant performance on a variety of
+                                datasets.</p>
+                            <p><b>Impact:</b> Contributes to automated text classification, crucial for applications in
+                                content recommendation systems and archival organization.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/Genre_Classifier_A_Machine_Learning_Approach_to_Text_Classification"
+                                class="btn btn-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-4">
+                        <img src="2.png" class="card-img-top border border-5" alt="Project Image" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Aircraft Landing Assistance using ANN</h5>
+                            <p><i>Self-Initiated Learning</i></p>
+                            <p class="card-text">
+                                <b>Description:</b>This project focuses on developing a predictive model using
+                                artificial neural networks (ANN)
+                                to enhance precision in aircraft landing systems. Using a combination of simulated and
+                                real-world datasets, a multi-layer perceptron model was trained to predict Precision
+                                Approach Path Indicator (PAPI) status for unmanned aerial vehicles.
+                            </p>
+                            <p><b>Impact:</b> Demonstrates the potential of AI in automating aviation processes,
+                                particularly for unmanned aircraft systems.</p>
+
+                            <a href="https://github.com/CHARLESJEYASEELAN/Unmanned-Aircraft-Landing-Assistance-using-DL"
+                                class="btn btn-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-4">
+                        <img src="Bliss robo.png" class="card-img-top border border-5" alt="Project Image"
+                            height="300px" width="150px">
+                        <div class="card-body">
+
+                            <h5 class="card-title">AI-Assisted Mental Health Portal for Mentally Deprived People using
+                                Flask and Tensorflow</h5>
+                            <p><i>Collaborative Innovation, Hackathon</i></p>
+                            <p class="card-text"><b>Description:</b> A hackathon project aimed at addressing mental
+                                health issues through technology.
+                                The portal integrates gamification, sentiment analysis, and real-time activity tracking.
+                                It uses TensorFlow-based
+                                models for assessing user emotions and provides an emergency contact feature for
+                                critical situations.</p>
+                            <p><b>Impact:</b> Highlights the potential of AI-driven solutions in improving mental health
+                                services, emphasizing user
+                                engagement and early intervention.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/ByteBuddies_A4" class="btn btn-primary">View
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-4">
+                        <img src="crypto.PNG" class="card-img-top border border-5" alt="Project Image" height="340px">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Identification of Cryptographic Algorithms from Cipher Text
+                                using ANN for Kannada Documents</h5>
+                            <p><i>Academic Coursework</i></p>
+                            <p class="card-text"><b>Description:</b> This project investigates the application of
+                                artificial neural networks to classify
+                                cryptographic algorithms based on ciphertext analysis. It introduces a
+                                Kannada-document-specific adaptation to assess
+                                algorithmic features using language-aware embeddings.</p>
+                            <p><b>Impact:</b> Provides a novel approach to cryptographic analysis, combining NLP and AI
+                                to
+                                address challenges in data security for regional languages.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/Cryptographic_Algorithm_Identifier_Using_ANN" class="btn btn-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-4">
+                        <img src="ship.png" class="card-img-top border border-5" alt="Project Image">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Ship Detection in Satellite Imagery using ID3, Random Forest and
+                                VGG16</h5>
+                            <p><i>Academic Coursework, Applied Research</i></p>
+                            <p class="card-text"><b>Description:</b> This project compares classical machine learning
+                                and deep learning techniques for ship detection in satellite images.
+                                The approach combines
+                                feature extraction using VGG16 with traditional algorithms like ID3 and Random Forest
+                                for a performance benchmark.</p>
+                            <p><b>Impact:</b> Offers a comparative methodology for maritime surveillance and satellite
+                                imagery analysis, crucial for coastal security and logistics.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/Ship_Classification_using_DL_and_ML"
+                                class="btn btn-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <h4>Programming Languages</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>R (Basic Proficiency)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <h4>Frameworks & Libraries</h4>
+                        <ul>
+                            <li>TensorFlow</li>
+                            <li>Sci-Kit Learn</li>
+                            <li>Pandas</li>
+                            <li>Numpy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <h4>Machine Learning & AI</h4>
+                        <ul>
+                            <li>Neural Networks for Supervised and Unsupervised Learning</li>
+                            <li>Natural Language Processing</li>
+                            <li>Image Processing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <h4>Web Tech.</h4>
+                        <ul>
+                            <li>Flask</li>
+                            <li>MERN Stack</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <h4>Databases</h4>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-item">
+                        <h4>Research & Writing</h4>
+                        <ul>
+                            <li>LateX</li>
+                            <li>Zotero</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Teaching & Mentorship Section -->
+    <section id="teaching-mentorship" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mentorship</h2>
+            <div class="row">
+                <!-- Timeline Section -->
+                <div class="col-md-12">
+                    <ul class="timeline">
+                        <!-- Event 1 -->
+                        <li class="timeline-item">
+                            <div class="timeline-badge"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5 class="timeline-title">Tech Talk: Overview of Neural Networks in Learning
+                                        Paradigms</h5>
+                                    
+                                </div>
+                                <div class="timeline-body">
+                                    <p><b><i>Date:</i> 08-Nov-2024</b></p>
+                                    <p>As part of my college's coding club, I delivered a <a href="https://www.linkedin.com/posts/charles-jeyaseelan_neuralnetwork-deeplearning-techtalk-activity-7260673993815326720-YEwJ?utm_source=share&utm_medium=member_desktop">tech talk</a>
+                                    to MCA final-year students, BCA students, and enthusiastic freshers. The session covered foundational concepts of neural networks and their application in learning paradigms.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Event 2 (Optional) -->
+                        <!-- <li class="timeline-item">
+                            <div class="timeline-badge"><i class="fas fa-users"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5 class="timeline-title">Mentorship Session</h5>
+                                    <p><i>Date:</i> 20-Dec-2024</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Mentored a group of students on deep learning techniques and model optimization.</p>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- Mentorship Content -->
+                
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>© 2024 Charles' Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
