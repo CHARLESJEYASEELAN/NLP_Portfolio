@@ -64,13 +64,25 @@
             bottom: 0;
             width: 2px;
             background: #3498db;
+
+        }
+
+        .list-group-item {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .list-group-item:hover {
+            transform: scale(1.05);
+            background-color: rgba(176, 241, 233, 0.6);
+            /* Light background effect */
         }
     </style>
-    
+
 </head>
 
 <body>
-    
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -187,12 +199,14 @@
                         <p>Sreekumar NR, Narendran SM, <b>Charles Jeyaseelan</b>, Rahul Ganesh S</p>
                         <p><i>IEEE CCEM Pre-Conference Workshop 2024 Presentation</i></p>
                         <p>
-                            <a href="https://www.linkedin.com/posts/charles-jeyaseelan_ieee-nlp-activity-7187842126271954945-xqwU?utm_source=share&utm_medium=member_desktop">Proposed</a> a methodology to train a large language model (LLM) to generate a high-quality
+                            <a
+                                href="https://www.linkedin.com/posts/charles-jeyaseelan_ieee-nlp-activity-7187842126271954945-xqwU?utm_source=share&utm_medium=member_desktop">Proposed</a>
+                            a methodology to train a large language model (LLM) to generate a high-quality
                             corpus of religious texts, maintaining reliability and sanctity. The corpus is designed to
                             improve generative AI's ability to produce contextually accurate and culturally sensitive
                             text.
                         </p>
-                        
+
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -201,7 +215,9 @@
                         <p>Sreekumar NR, Narendran SM, Lasya S, <b>Charles Jeyaseelan</b></p>
                         <p><i>IEEE CCEM Pre-Conference Workshop 2024 Presentation</i></p>
                         <p>
-                            <a href="https://www.linkedin.com/posts/charles-jeyaseelan_ieee-nlp-activity-7187842126271954945-xqwU?utm_source=share&utm_medium=member_desktop">Introduced</a> a novel approach to calculate semantic similarity scores for unstructured text
+                            <a
+                                href="https://www.linkedin.com/posts/charles-jeyaseelan_ieee-nlp-activity-7187842126271954945-xqwU?utm_source=share&utm_medium=member_desktop">Introduced</a>
+                            a novel approach to calculate semantic similarity scores for unstructured text
                             across 8 contextual domains. Leveraged semantic tree transformations and deep learning
                             regressors to predict contextual scores, aiming to bridge gaps in lexicon-based methods.
                         </p>
@@ -215,7 +231,9 @@
                         <p>Sreekumar NR, Narendran SM, <b>Charles Jeyaseelan</b></p>
                         <p><i>IEEE CCEM Pre-Conference Workshop 2024 Presentation</i></p>
                         <p>
-                            <a href="https://www.linkedin.com/posts/charles-jeyaseelan_ieee-nlp-activity-7187842126271954945-xqwU?utm_source=share&utm_medium=member_desktop">Proposed</a> a method to estimate Emotional Quotient (EQ) using Prolog programming, focusing on
+                            <a
+                                href="https://www.linkedin.com/posts/charles-jeyaseelan_ieee-nlp-activity-7187842126271954945-xqwU?utm_source=share&utm_medium=member_desktop">Proposed</a>
+                            a method to estimate Emotional Quotient (EQ) using Prolog programming, focusing on
                             six basic emotions (happy, sad, anger, fear, disgust, surprise). Designed a scoring
                             mechanism for EQ estimation and multi-variate emotion annotation for predictive analysis.
                         </p>
@@ -229,122 +247,93 @@
     </section>
 
 
-    <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Other Projects</h2>
-            <h5 class="text-center mb-4">Explored a blend of academic pursuits, creative side projects, and innovative
-                research endeavors.</h5>
+            <h2 class="text-center mb-4">Projects</h2>
+            <h5 class="text-center mb-4">Explored a blend of academic pursuits, creative side projects, and innovative research endeavors.</h5>
+            <br>
             <div class="row">
-                <div class="col-md-4 d-flex align-items-stretch">
-                    <div class="card mb-4">
-                        <img src="4.png" class="card-img-top border border-5" alt="Project Image" height="300px">
-                        <div class="card-body">
-                            <h5 class="card-title">Genre Classifier: A Machine Learning Approach to Text Classification
-                            </h5>
+                <div class="col-md-4">
+                    <h3 class="text-center">Computer Vision</h3>
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h5>Aerial Image Classification using Convolutional Autoencoders</h5>
                             <p><i>Self-Initiated Learning</i></p>
-                            <p class="card-text"><b>Description:</b> This project explores the application of machine
-                                learning techniques to classify textual data into genres. The primary objective was to
-                                build a robust pipeline capable of handling noisy data and ensuring high classification
-                                accuracy. Leveraging a combination of traditional feature extraction techniques like
-                                TF-IDF and modern embeddings, the model achieves significant performance on a variety of
-                                datasets.</p>
-                            <p><b>Impact:</b> Contributes to automated text classification, crucial for applications in
-                                content recommendation systems and archival organization.</p>
-                            <a href="https://github.com/CHARLESJEYASEELAN/Genre_Classifier_A_Machine_Learning_Approach_to_Text_Classification"
-                                class="btn btn-primary">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-stretch">
-                    <div class="card mb-4">
-                        <img src="2.png" class="card-img-top border border-5" alt="Project Image" height="300px">
-                        <div class="card-body">
-                            <h5 class="card-title">Aircraft Landing Assistance using ANN</h5>
-                            <p><i>Self-Initiated Learning</i></p>
-                            <p class="card-text">
-                                <b>Description:</b>This project focuses on developing a predictive model using
-                                artificial neural networks (ANN)
-                                to enhance precision in aircraft landing systems. Using a combination of simulated and
-                                real-world datasets, a multi-layer perceptron model was trained to predict Precision
-                                Approach Path Indicator (PAPI) status for unmanned aerial vehicles.
-                            </p>
-                            <p><b>Impact:</b> Demonstrates the potential of AI in automating aviation processes,
-                                particularly for unmanned aircraft systems.</p>
-
-                            <a href="https://github.com/CHARLESJEYASEELAN/Unmanned-Aircraft-Landing-Assistance-using-DL"
-                                class="btn btn-primary">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-stretch">
-                    <div class="card mb-4">
-                        <img src="Bliss robo.png" class="card-img-top border border-5" alt="Project Image"
-                            height="300px" width="150px">
-                        <div class="card-body">
-
-                            <h5 class="card-title">AI-Assisted Mental Health Portal for Mentally Deprived People using
-                                Flask and Tensorflow</h5>
-                            <p><i>Collaborative Innovation, Hackathon</i></p>
-                            <p class="card-text"><b>Description:</b> A hackathon project aimed at addressing mental
-                                health issues through technology.
-                                The portal integrates gamification, sentiment analysis, and real-time activity tracking.
-                                It uses TensorFlow-based
-                                models for assessing user emotions and provides an emergency contact feature for
-                                critical situations.</p>
-                            <p><b>Impact:</b> Highlights the potential of AI-driven solutions in improving mental health
-                                services, emphasizing user
-                                engagement and early intervention.</p>
-                            <a href="https://github.com/CHARLESJEYASEELAN/ByteBuddies_A4" class="btn btn-primary">View
-                                Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4 d-flex align-items-stretch">
-                    <div class="card mb-4">
-                        <img src="crypto.PNG" class="card-img-top border border-5" alt="Project Image" height="340px">
-                        <div class="card-body">
-
-                            <h5 class="card-title">Identification of Cryptographic Algorithms from Cipher Text
-                                using ANN for Kannada Documents</h5>
-                            <p><i>Academic Coursework</i></p>
-                            <p class="card-text"><b>Description:</b> This project investigates the application of
-                                artificial neural networks to classify
-                                cryptographic algorithms based on ciphertext analysis. It introduces a
-                                Kannada-document-specific adaptation to assess
-                                algorithmic features using language-aware embeddings.</p>
-                            <p><b>Impact:</b> Provides a novel approach to cryptographic analysis, combining NLP and AI
-                                to
-                                address challenges in data security for regional languages.</p>
-                            <a href="https://github.com/CHARLESJEYASEELAN/Cryptographic_Algorithm_Identifier_Using_ANN" class="btn btn-primary">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-stretch">
-                    <div class="card mb-4">
-                        <img src="ship.png" class="card-img-top border border-5" alt="Project Image">
-                        <div class="card-body">
-
-                            <h5 class="card-title">Ship Detection in Satellite Imagery using ID3, Random Forest and
-                                VGG16</h5>
+                            <p><b>Description:</b> Using convolutional autoencoders for feature extraction and
+                                classification of aerial imagery.</p>
+                            <p><b>Impact:</b> Useful in remote sensing and surveillance applications.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/Aerial_Image_Classification_using_Convolutional_Autoencoders"
+                                class="btn btn-sm btn-primary">View Code</a>
+                        </li>
+                        <br>
+                        <li class="list-group-item">
+                            <h5>Ship Detection in Satellite Imagery using ID3, Random Forest, and VGG16</h5>
                             <p><i>Academic Coursework, Applied Research</i></p>
-                            <p class="card-text"><b>Description:</b> This project compares classical machine learning
-                                and deep learning techniques for ship detection in satellite images.
-                                The approach combines
-                                feature extraction using VGG16 with traditional algorithms like ID3 and Random Forest
-                                for a performance benchmark.</p>
-                            <p><b>Impact:</b> Offers a comparative methodology for maritime surveillance and satellite
-                                imagery analysis, crucial for coastal security and logistics.</p>
+                            <p><b>Description:</b> Comparison of classical machine learning and deep learning techniques
+                                for ship detection.</p>
+                            <p><b>Impact:</b> Enhances maritime surveillance and security analysis.</p>
                             <a href="https://github.com/CHARLESJEYASEELAN/Ship_Classification_using_DL_and_ML"
-                                class="btn btn-primary">View Code</a>
-                        </div>
-                    </div>
+                                class="btn btn-sm btn-primary">View Code</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="text-center">Natural Language Processing</h3>
+                    <br>    
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h5>Genre Classifier: A Machine Learning Approach to Text Classification</h5>
+                            <p><i>Self-Initiated Learning</i></p>
+                            <p><b>Description:</b> Using TF-IDF and embeddings to classify text genres.</p>
+                            <p><b>Impact:</b> Benefits content recommendation systems and archival organization.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/Genre_Classifier_A_Machine_Learning_Approach_to_Text_Classification"
+                                class="btn btn-sm btn-primary">View Code</a>
+                        </li>
+                        <br>
+                        <li class="list-group-item">
+                            <h5>Identification of Cryptographic Algorithms from Cipher Text using ANN for Kannada
+                                Documents</h5>
+                            <p><i>Academic Coursework</i></p>
+                            <p><b>Description:</b> Investigates ANN for classifying cryptographic algorithms in Kannada
+                                documents.</p>
+                            <p><b>Impact:</b> Combines NLP and AI to enhance cryptographic analysis.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/Cryptographic_Algorithm_Identifier_Using_ANN"
+                                class="btn btn-sm btn-primary">View Code</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="text-center">Others</h3>
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h5>Unmanned Aircraft Landing Assistance using ANN</h5>
+                            <p><i>Self-Initiated Learning</i></p>
+                            <p><b>Description:</b> Predicting PAPI status for UAVs using ANN models.</p>
+                            <p><b>Impact:</b> Enhances precision in unmanned aircraft landing.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/Unmanned-Aircraft-Landing-Assistance-using-DL"
+                                class="btn btn-sm btn-primary">View Code</a>
+                        </li>
+                        <br>
+                        <li class="list-group-item">
+                            <h5>AI-Assisted Mental Health Portal for Mentally Deprived People using Flask and TensorFlow
+                            </h5>
+                            <p><i>Collaborative Innovation, Hackathon</i></p>
+                            <p><b>Description:</b> Hackathon project integrating AI-based mental health assessment
+                                tools.</p>
+                            <p><b>Impact:</b> Demonstrates the potential of AI in mental health intervention.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/ByteBuddies_A4"
+                                class="btn btn-sm btn-primary">View Code</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <!-- Skills Section -->
@@ -432,12 +421,16 @@
                                 <div class="timeline-heading">
                                     <h5 class="timeline-title">Tech Talk: Overview of Neural Networks in Learning
                                         Paradigms</h5>
-                                    
+
                                 </div>
                                 <div class="timeline-body">
                                     <p><b><i>Date:</i> 08-Nov-2024</b></p>
-                                    <p>As part of my college's coding club, I delivered a <a href="https://www.linkedin.com/posts/charles-jeyaseelan_neuralnetwork-deeplearning-techtalk-activity-7260673993815326720-YEwJ?utm_source=share&utm_medium=member_desktop">tech talk</a>
-                                    to MCA final-year students, BCA students, and enthusiastic freshers. The session covered foundational concepts of neural networks and their application in learning paradigms.</p>
+                                    <p>As part of my college's coding club, I delivered a <a
+                                            href="https://www.linkedin.com/posts/charles-jeyaseelan_neuralnetwork-deeplearning-techtalk-activity-7260673993815326720-YEwJ?utm_source=share&utm_medium=member_desktop">tech
+                                            talk</a>
+                                        to MCA final-year students, BCA students, and enthusiastic freshers. The session
+                                        covered foundational concepts of neural networks and their application in
+                                        learning paradigms.</p>
                                 </div>
                             </div>
                         </li>
@@ -451,22 +444,34 @@
                                 </div>
                                 <div class="timeline-body">
                                     <p><b><i>Date:</i> 21-Dec-2024</b></p>
-                                    
-                                    <p>Co-presented with <a href="https://www.linkedin.com/in/lasya-s-539481218?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7wY3WLFPS9S7wu3vjNLg%2FQ%3D%3D"><b>Lasya S</b></a> in a <a href="https://www.linkedin.com/posts/charles-jeyaseelan_artificialintelligence-machinelearning-techtalk-activity-7276229894903132161-9C9n?utm_source=share&utm_medium=member_desktop">session</a> organized by 
-                                        <a href="https://gdg.community.dev/gdg-on-campus-amrita-vishwa-vidyapeetham-mysuru-india/">GDG Amrita Mysuru Chapter.</a>
+
+                                    <p>Co-presented with <a
+                                            href="https://www.linkedin.com/in/lasya-s-539481218?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7wY3WLFPS9S7wu3vjNLg%2FQ%3D%3D"><b>Lasya
+                                                S</b></a> in a <a
+                                            href="https://www.linkedin.com/posts/charles-jeyaseelan_artificialintelligence-machinelearning-techtalk-activity-7276229894903132161-9C9n?utm_source=share&utm_medium=member_desktop">session</a>
+                                        organized by
+                                        <a
+                                            href="https://gdg.community.dev/gdg-on-campus-amrita-vishwa-vidyapeetham-mysuru-india/">GDG
+                                            Amrita Mysuru Chapter.</a>
                                         Mentored a group of students on deep learning techniques, model optimization,
                                         and their practical applications.
-                                        Special thanks to <a href="https://www.linkedin.com/in/lakshay-panwar-95b430239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoHlUaDwFTpqMaPcMafJ9Sg%3D%3D"><b>Lakshay Panwar</b></a> (GDG Lead) and 
-                                        <a href="https://www.linkedin.com/in/sreekumar-nr-89634b156?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bv89G%2BpLmR9WcU2zaCvKdCA%3D%3D"><b>Sreekumar NR</b></a>
-                                        (Coding Club Coordinator) for their guidance and support.</p>
+                                        Special thanks to <a
+                                            href="https://www.linkedin.com/in/lakshay-panwar-95b430239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoHlUaDwFTpqMaPcMafJ9Sg%3D%3D"><b>Lakshay
+                                                Panwar</b></a> (GDG Lead) and
+                                        <a
+                                            href="https://www.linkedin.com/in/sreekumar-nr-89634b156?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bv89G%2BpLmR9WcU2zaCvKdCA%3D%3D"><b>Sreekumar
+                                                NR</b></a>
+                                        (Coding Club Coordinator) for their guidance and support.
+                                    </p>
                                 </div>
                             </div>
                         </li>
+
                     </ul>
                 </div>
 
                 <!-- Mentorship Content -->
-                
+
             </div>
         </div>
     </section>
