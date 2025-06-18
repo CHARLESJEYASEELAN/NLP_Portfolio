@@ -108,6 +108,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#teaching-mentorship">Mentorship</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tutorials">Tutorials & Blogs</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -132,19 +135,26 @@
                 <div class="col-md-6">
 
                     <p>
-                        I'm Charles Jeyaseelan, a passionate AI Researcher currently pursuing a
-                        Master's in Computer Applications. My expertise lies in Deep Learning architectures and their
-                        applications across diverse AI domains, with a special focus on Natural Language Processing
-                        (NLP). I thrive on exploring innovative solutions and building models that push the boundaries
-                        of machine learning.
+                        I'm Charles Jeyaseelan, an aspiring AI and NLP Researcher, currently pursuing my
+                        Integrated Master's in Computer Applications. My core strength lies in designing deep learning
+                        architectures that model human-like understanding, with a special focus on emotion modeling,
+                        sarcasm intensity estimation, and contextual semantic analysis. <br><br>
 
-                        <br><br>My journey in AI includes contributing to cutting-edge research in sentiment analysis,
-                        culminating in a paper accepted at the IEEE CCEM 2023 Conference. I am driven by a vision to
-                        leverage AI for impactful technological advancements that can transform industries and improve
-                        lives.
+                        Driven by a deep curiosity for affective computing and AI safety, my research is rooted in
+                        building emotionally intelligent systems that can perceive, interpret, and respond to human
+                        language in psychologically and culturally sensitive ways. I envision creating NLP models that
+                        go beyond text classification — toward interpreting intent, emotion, and context with nuance and
+                        care.<br><br>
 
-                        <br><br>Let's connect to discuss AI, Machine Learning, Deep Learning, and the future of
-                        intelligent systems. Together, we can unlock the transformative power of technology!
+                        My journey so far includes a research paper on texmoji-based emotion intensity estimation
+                        accepted at IEEE CCEM 2023, along with multiple ongoing works on sarcasm regression and
+                        GenAI-based corpus construction. I aspire to contribute to the development of Safe AI — where
+                        human-AI interaction remains ethical, empathetic, and emotionally aware in the rapidly evolving
+                        digital ecosystem.<br><br>
+
+                        Let's connect to explore cutting-edge ideas in NLP, deep learning, and emotionally responsible
+                        AI. Together, we can shape a future where machines understand more than just words - <b>they
+                            understand us.</b>
 
                     </p>
                     <div class="social-links mt-4">
@@ -239,7 +249,7 @@
                         </p>
                     </div>
                 </div>
-                
+
             </div>
             <div class="row justify-content-center">
                 <h4 class="text-center">Contact Me for Collaboration</h4>
@@ -250,11 +260,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="research-item mb-4">
-                        <h4>Polarity Shift Sarcasm Quantifier: Estimating Sarcasm Intensity in Tweets using Machine Learning</h4>
+                        <h4>Polarity Shift Sarcasm Quantifier: Estimating Sarcasm Intensity in Tweets using Machine
+                            Learning</h4>
                         <p><b>Charles Jeyaseelan</b>, Sreekumar NR, Lasya S, Jyothsna S</p>
                         <p><i>Ongoing</i></p>
                         <p>
-                            Redesigning sarcasm intensity estimation via contextual polarity windows with sentiment propagation and sequence-based regression models.
+                            Redesigning sarcasm intensity estimation via contextual polarity windows with sentiment
+                            propagation and sequence-based regression models.
                         </p>
                     </div>
                 </div>
@@ -264,12 +276,14 @@
                         <p><b>Charles Jeyaseelan</b>, Sreekumar NR</p>
                         <p><i>Manusript under Revision</i></p>
                         <p>
-                            Developing a novel end-to-end pipeline using transformer-enhanced Bi-LSTM models to regress emotion scores from texmojis. Incorporating a refined grammar-aware emotional scoring function and semi-supervised learning paradigm to annotate real-world datasets.
+                            Developing a novel end-to-end pipeline using transformer-enhanced Bi-LSTM models to regress
+                            emotion scores from texmojis. Incorporating a refined grammar-aware emotional scoring
+                            function and semi-supervised learning paradigm to annotate real-world datasets.
                         </p>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -277,96 +291,168 @@
     <section id="projects" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Projects</h2>
-            <h5 class="text-center mb-4">Explored a blend of academic pursuits, creative side projects, and innovative research endeavors.</h5>
-            <br>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="text-center">Computer Vision</h3>
-                    <br>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <h5>Aerial Image Classification using Convolutional Autoencoders</h5>
+            <h5 class="text-center mb-4">Categorized into Computer Vision, Natural Language Processing, Emotionally
+                Aware AI, and Others.</h5>
+
+            <div class="text-center mb-4">
+                <button class="btn btn-outline-primary filter-button" data-filter="all">All</button>
+                <button class="btn btn-outline-primary filter-button" data-filter="cv">CV</button>
+                <button class="btn btn-outline-primary filter-button" data-filter="nlp">NLP</button>
+                <button class="btn btn-outline-primary filter-button" data-filter="emotion">Emotion-Aware AI</button>
+                <button class="btn btn-outline-primary filter-button" data-filter="others">Others</button>
+            </div>
+
+            <div class="row" id="project-grid">
+                <!-- CV -->
+                <div class="col-md-4 mb-4 project-box cv">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Aerial Image Classification using Convolutional Autoencoders</h5>
                             <p><i>Self-Initiated Learning</i></p>
                             <p><b>Description:</b> Using convolutional autoencoders for feature extraction and
                                 classification of aerial imagery.</p>
                             <p><b>Impact:</b> Useful in remote sensing and surveillance applications.</p>
                             <a href="https://github.com/CHARLESJEYASEELAN/Aerial_Image_Classification_using_Convolutional_Autoencoders"
                                 class="btn btn-sm btn-primary">View Code</a>
-                        </li>
-                        <br>
-                        <li class="list-group-item">
-                            <h5>Ship Detection in Satellite Imagery using ID3, Random Forest, and VGG16</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 project-box cv">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Ship Detection in Satellite Imagery using ID3, Random Forest, and
+                                VGG16</h5>
                             <p><i>Academic Coursework, Applied Research</i></p>
                             <p><b>Description:</b> Comparison of classical machine learning and deep learning techniques
                                 for ship detection.</p>
                             <p><b>Impact:</b> Enhances maritime surveillance and security analysis.</p>
                             <a href="https://github.com/CHARLESJEYASEELAN/Ship_Classification_using_DL_and_ML"
                                 class="btn btn-sm btn-primary">View Code</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-4">
-                    <h3 class="text-center">Natural Language Processing</h3>
-                    <br>    
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <h5>Genre Classifier: A Machine Learning Approach to Text Classification</h5>
+                <!-- NLP -->
+                <div class="col-md-4 mb-4 project-box nlp">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Genre Classifier: A Machine Learning Approach to Text Classification
+                            </h5>
                             <p><i>Self-Initiated Learning</i></p>
                             <p><b>Description:</b> Using TF-IDF and embeddings to classify text genres.</p>
                             <p><b>Impact:</b> Benefits content recommendation systems and archival organization.</p>
                             <a href="https://github.com/CHARLESJEYASEELAN/Genre_Classifier_A_Machine_Learning_Approach_to_Text_Classification"
                                 class="btn btn-sm btn-primary">View Code</a>
-                        </li>
-                        <br>
-                        <li class="list-group-item">
-                            <h5>Identification of Cryptographic Algorithms from Cipher Text using ANN for Kannada
-                                Documents</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 project-box nlp">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Identification of Cryptographic Algorithms from Cipher Text using ANN
+                                for Kannada Documents</h5>
                             <p><i>Academic Coursework</i></p>
                             <p><b>Description:</b> Investigates ANN for classifying cryptographic algorithms in Kannada
                                 documents.</p>
                             <p><b>Impact:</b> Combines NLP and AI to enhance cryptographic analysis.</p>
                             <a href="https://github.com/CHARLESJEYASEELAN/Cryptographic_Algorithm_Identifier_Using_ANN"
                                 class="btn btn-sm btn-primary">View Code</a>
-                        </li>
-                        <br>
-                        <li class="list-group-item">
-                            <h5> Local LLM-Powered Research Assistant</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 project-box nlp">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Local LLM-Powered Research Assistant</h5>
                             <p><i>Self-Initiated Learning</i></p>
-                            <p><b>Description:</b> A simple research assistant in minutes without any API, for processing endless research papers</p>
+                            <p><b>Description:</b> A simple research assistant in minutes without any API, for
+                                processing endless research papers.</p>
                             <p><b>Impact:</b> Enhances research efficiency and accessibility, with view of security.</p>
                             <a href="https://github.com/CHARLESJEYASEELAN/RA_using_RAG"
                                 class="btn btn-sm btn-primary">View Code</a>
                             <a href="https://medium.com/@itzcharles03/build-a-local-llm-powered-research-assistant-in-minutes-76ac70b0b64f"
                                 class="btn btn-sm btn-primary">View Tutorial</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-4">
-                    <h3 class="text-center">Others</h3>
-                    <br>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <h5>Unmanned Aircraft Landing Assistance using ANN</h5>
+                <!-- Emotionally Aware AI -->
+                <div class="col-md-4 mb-4 project-box emotion">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Sarcasm Detection using Machine Learning in Text: A Comparative
+                                Analysis</h5>
+                            <p><i>Self-Initiated Learning</i></p>
+                            <p><b>Description:</b> Developing a machine learning model to identify sarcastic expressions
+                                in textual data by analyzing semantic inconsistencies and polarity shifts.</p>
+                            <p><b>Impact:</b> Enhances sentiment analysis systems by improving accuracy in recognizing
+                                non-literal and nuanced human expressions.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/sarcasm-detector"
+                                class="btn btn-sm btn-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 project-box emotion">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Facial Emotion Recognition</h5>
+                            <p><i>Self-initiated Learning - ON GOING</i></p>
+                            <p><b>Description:</b> Building a deep learning-based vision model to classify facial
+                                expressions into emotional categories using image datasets.</p>
+                            <p><b>Impact:</b> Supports real-time emotion tracking in applications like mental health
+                                monitoring, education, and human-computer interaction.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 project-box emotion">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Simulating Smart Conversations with NAO and AI in Webots</h5>
+                            <p><i>Self-initiated Learning - ON GOING</i></p>
+                            <p><b>Description:</b> Integrating NAO humanoid robot in Webots with NLP and rule-based AI
+                                to simulate intelligent, context-aware conversations.</p>
+                            <p><b>Impact:</b> Contributes to the development of emotionally and socially aware robotic
+                                agents for education, therapy, and assistive technology.</p>
+                            <a href="https://github.com/CHARLESJEYASEELAN/NAO_with_LLM_ChatBot"
+                                class="btn btn-sm btn-primary">View Code</a>
+                            <a href="https://medium.com/@itzcharles03/simulating-smart-conversations-with-nao-and-ai-in-webots-edff4e975368"
+                                class="btn btn-sm btn-primary">View Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Others -->
+                <div class="col-md-4 mb-4 project-box others">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Unmanned Aircraft Landing Assistance using ANN</h5>
                             <p><i>Self-Initiated Learning</i></p>
                             <p><b>Description:</b> Predicting PAPI status for UAVs using ANN models.</p>
                             <p><b>Impact:</b> Enhances precision in unmanned aircraft landing.</p>
                             <a href="https://github.com/CHARLESJEYASEELAN/Unmanned-Aircraft-Landing-Assistance-using-DL"
                                 class="btn btn-sm btn-primary">View Code</a>
-                        </li>
-                        <br>
-                        <li class="list-group-item">
-                            <h5>AI-Assisted Mental Health Portal for Mentally Deprived People using Flask and TensorFlow
-                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 project-box others">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">AI-Assisted Mental Health Portal for Mentally Deprived People using
+                                Flask and TensorFlow</h5>
                             <p><i>Collaborative Innovation, Hackathon</i></p>
                             <p><b>Description:</b> Hackathon project integrating AI-based mental health assessment
                                 tools.</p>
                             <p><b>Impact:</b> Demonstrates the potential of AI in mental health intervention.</p>
                             <a href="https://github.com/CHARLESJEYASEELAN/ByteBuddies_A4"
                                 class="btn btn-sm btn-primary">View Code</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -513,6 +599,74 @@
             </div>
         </div>
     </section>
+
+    <section id="tutorials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Blogs & Tutorials</h2>
+            <h5 class="text-center mb-5">A space to share my learnings, experiments, and reflections in AI, ML, NLP, and
+                CV.</h5>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- Blog 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Build a Local LLM-Powered Research Assistant in Minutes</h5>
+                            <p class="card-text">A tutorial to create a privacy-focused research assistant using
+                                Retrieval-Augmented Generation (RAG) with no APIs.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://medium.com/@itzcharles03/build-a-local-llm-powered-research-assistant-in-minutes-76ac70b0b64f"
+                                target="_blank" class="btn btn-sm btn-outline-primary">Read on Medium</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Simulating Smart Conversations with NAO and AI in Webots</h5>
+                            <p class="card-text">An end-to-end guide on integrating a humanoid robot (NAO) in Webots
+                                with LLM-based conversational AI using rule-based logic and NLP.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://medium.com/@itzcharles03/simulating-smart-conversations-with-nao-and-ai-in-webots-edff4e975368"
+                                target="_blank" class="btn btn-sm btn-outline-primary">Read on Medium</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Exploring Sentiment Analysis with Long Short Term Memory Networks (LSTM)</h5>
+                            <p class="card-text">A theoretical walkthrough of how LSTMs process sequences and help capture contextual sentiment from text data.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <a href="https://medium.com/@itzcharles03/exploring-sentiment-analysis-with-long-short-term-memory-networks-lstm-59f9423c2029"
+                                target="_blank" class="btn btn-sm btn-outline-primary">Read on Medium</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Future Articles Placeholder -->
+                <!-- <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Title of Upcoming Blog</h5>
+                        <p class="card-text">A brief preview of what the upcoming blog will explore...</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <a href="#" class="btn btn-sm btn-outline-secondary disabled">Coming Soon</a>
+                    </div>
+                </div>
+            </div> -->
+
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-dark text-light text-center py-3">
         <p>© 2024 Charles' Portfolio. All rights reserved.</p>
@@ -520,6 +674,20 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const buttons = document.querySelectorAll('.filter-button');
+        const boxes = document.querySelectorAll('.project-box');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                boxes.forEach(box => {
+                    box.style.display = (filter === 'all' || box.classList.contains(filter)) ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
 
 </body>
 
